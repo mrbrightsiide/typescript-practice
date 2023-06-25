@@ -1,0 +1,18 @@
+{
+  //컴파일과정에 관여하는 상세 옵션들은 compilerOptions안으로
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", //컴파일된 파일의 모듈시스템 옵션 설정
+    /* 왜 target버전과 모듈시스템을 명시해야하는지 ? -> 우리가 실제로 만드는 프로덕션이 무조건 우리 개발환경과 동일한 환경에서 돌아간다는 것을 보장하지 않기 때문에 */
+    "outDir": "dist", //컴파일된 파일들이 들어갈 경로 명시
+    "strict": true, //엄격한 검사 모드 on/off (js 코드를 ts로 마이그레이션할 때 등 꺼둘경우도 있음)
+    /* ts는 모든 파일을 전역모듈로 취급한다 - 모든 파일이 같은 공간에 있다고 취급
+    1. export {};문을 프로덕션 코드에 넣어서 개별모듈로 인식하게 하거나
+    2. modulDetection을 force로 설정해서 컴파일된 파일에 export {};가 포함되도록 강제하거나
+     */
+    "moduleDetection": "force"
+    
+  },
+  "ts-node": {"esm": true},
+  "include": ["src"] //컴파일할 파일들이 모여있는 경로 명시
+}

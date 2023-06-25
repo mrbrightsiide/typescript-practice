@@ -1,0 +1,23 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module", // node가 ES모듈시스템을 이해하게 하려면 type을 모듈로 설정해야함
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbrightsiide/typescript-practice.git"
+  },
+  "author": "김시아 <ksa2.uiti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrbrightsiide/typescript-practice/issues"
+  },
+  "homepage": "https://github.com/mrbrightsiide/typescript-practice#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "",
+  "dependencies": {
+    "@types/node": "^20.3.1"
+  }
+}
