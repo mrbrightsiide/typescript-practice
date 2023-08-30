@@ -1,0 +1,23 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrbrightsiide/typescript-practice.git"
+  },
+  "author": "김시아 <ksa2.uiti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrbrightsiide/typescript-practice/issues"
+  },
+  "homepage": "https://github.com/mrbrightsiide/typescript-practice#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "",
+  "dependencies": {
+    "@types/node": "^20.3.1"
+  }
+}
